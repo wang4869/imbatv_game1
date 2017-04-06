@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8" />
+
+<title>imbatv</title>
+
+<!--移动端版本兼容 -->
+<script type="text/javascript">
+         var phoneWidth =  parseInt(window.screen.width);
+         var phoneScale = phoneWidth/480;
+         var ua = navigator.userAgent;
+         if (/Android (\d+\.\d+)/.test(ua)){
+                   var version = parseFloat(RegExp.$1);
+                   if(version>2.3){
+                            document.write('<meta name="viewport" content="width=640, user-scalable=no">');
+                   }else{
+                            document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+                   }
+         } else {
+                   document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+         }
+</script>
+<!--移动端版本兼容 end -->
+
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+</head>
+
+<body>
+<audio src="www/images/bgm.mp3" preload="auto" loop autoplay id="bgm" style="display: none; height: 0;"></audio>
+<audio src="www/images/voice.mp3" preload="auto" id="voice" style="display: none; height: 0;"></audio>
+<audio src="www/images/voice2.mp3" preload="auto" id="voice2" style="display: none; height: 0;"></audio>
+<div id="main">
+	<div id="container">
+		<canvas height="1040" width="640" id="game-box"></canvas>
+		<div class="arrivedCity" style="display: none;"></div>
+	</div>
+</div>
+
+	<div class="page1">
+		<div class="h950">
+			<div class="innerDiv">
+				<img src="www/images/logo1.png" class="logo1">
+				<img src="www/images/sl1.png" class="sl1">
+				<a href="javascript:void(0);" class="btn1" onclick="$('.page1').hide();"><img src="www/images/btn1.png"></a>
+			</div>
+		</div>
+	</div>
+
+<!--首页浮窗--> 
+<div class="indexPage" style="display:none;">
+	<div class="indexPop">
+		<div class="innerDiv">
+			<div class="indexNote"></div>
+			<a href="javascript:void(0);" class="indexBtn01"><img src="www/images/note1Btn1.png"></a>
+		</div>
+	</div>
+</div> 
+<!--首页浮窗 end--> 
+
+<div class="pop pop1" style="display: none;">
+	<div class="pop1Note">
+		<div class="innerDiv">
+			<a href="javascript:void(0);" class="pop2Btn1" onClick="showIndexPop();"><img src="www/images/note1Btn1.png"></a>
+		</div>
+	</div>
+</div>
+
+<div class="pop pop2" style="display: none;">
+	<div class="pop2Note">
+		<div class="innerDiv">
+			<a href="javascript:void(0);" class="pop2Btn1" onClick="playAgain1();"><img src="www/images/note2Btn1.png"></a>
+		</div>
+	</div>
+</div>
+
+<div class="pop pop3" style="display: none;" onClick="window.location.reload();">
+	<div class="pop3Note">
+		<div class="innerDiv">
+			<img src="www/images/face.jpg" class="pop3Img1">
+			<div class="pop3Txt1">IDIDIDID</div>
+		</div>
+	</div>
+</div>
+
+<!--
+	<p id="test" style="position: absolute; z-index: 5000; top: 20px; right: 20px; font-size: 20px;"></p>
+	<p id="test2" style="position: absolute; z-index: 5000; top: 20px; left: 20px; font-size: 20px;"></p>
+-->
+
+	<div class="point">0</div>
+
+<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>

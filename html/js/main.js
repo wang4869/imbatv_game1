@@ -52,7 +52,7 @@ var objA;
             i.drawImage(h, 0, 0, h.width, h.height);
         },
         1);
-        m("che1.png che2.png che3.png lza1.png lza2.png lzb1.png lzb2.png lzc1.png lzc2.png lzd1.png lzd2.png cartridge.png c_1.png c_2.png c_3.png c_4.png c_5.png c_6.png c_7.png c_8.png c_9.png c_10.png c_11.png c_12.png c_13.png c_14.png".split(" "),
+        m("che1.png che2.png che3.png lza1.png lza2.png lzb1.png lzb2.png lzc1.png lzc2.png lzd1.png lzd2.png cartridge.png c_1.png c_2.png c_3.png c_4.png c_5.png c_6.png c_7.png c_8.png c_9.png c_10.png c_11.png c_12.png c_13.png c_14.png c_15.png c_16.png c_17.png c_18.png c_19.png c_20.png c_21.png c_22.png c_23.png c_24.png c_25.png c_26.png c_27.png c_28.png c_29.png c_30.png c_31.png c_32.png".split(" "),
 		  // mapTop.png
         function() {
             var c = function(g) {
@@ -89,7 +89,7 @@ var objA;
                     this.dieTime = 2;
 					this.type=1;
                     break;
-				case 18://路障d
+				case 4://路障d
                     this.hp = 1;
                     this.score = 15E1;
                     this.modelimg = "lzd1.png";
@@ -97,7 +97,7 @@ var objA;
                     this.dieTime = 2;
 					this.type=1;
                     break;
-				case 4://北京
+				case 5:
                     this.hp = 'wd';
                     this.score = 10;
                     this.modelimg = "c_1.png";
@@ -105,7 +105,7 @@ var objA;
                     this.dieTime = 2;
 					this.type=2;
                     break;
-				case 5://石家庄
+				case 6:
                     this.hp = 'wd';
                     this.score = 10;
                     this.modelimg = "c_2.png";
@@ -113,7 +113,7 @@ var objA;
                     this.dieTime = 2;
 					this.type=2;
                     break;
-				case 6://郑州
+				case 7:
                     this.hp = 'wd';
                     this.score = 10;
                     this.modelimg = "c_3.png";
@@ -121,7 +121,7 @@ var objA;
                     this.dieTime = 2;
 					this.type=2;
                     break;
-				case 7://南京
+				case 8:
                     this.hp = 'wd';
                     this.score = 10;
                     this.modelimg = "c_4.png";
@@ -129,7 +129,7 @@ var objA;
                     this.dieTime = 2;
 					this.type=2;
                     break;
-				case 8://武汉
+				case 9:
                     this.hp = 'wd';
                     this.score = 10;
                     this.modelimg = "c_5.png";
@@ -137,7 +137,7 @@ var objA;
                     this.dieTime = 2;
 					this.type=2;
                     break;
-				case 9://上海
+				case 10:
                     this.hp = 'wd';
                     this.score = 10;
                     this.modelimg = "c_6.png";
@@ -145,7 +145,7 @@ var objA;
                     this.dieTime = 2;
 					this.type=2;
                     break;
-				case 10://成都
+				case 11:
                     this.hp = 'wd';
                     this.score = 10;
                     this.modelimg = "c_7.png";
@@ -153,7 +153,7 @@ var objA;
                     this.dieTime = 2;
 					this.type=2;
                     break;
-				case 11://长沙
+				case 12:
                     this.hp = 'wd';
                     this.score = 10;
                     this.modelimg = "c_8.png";
@@ -161,7 +161,7 @@ var objA;
                     this.dieTime = 2;
 					this.type=2;
                     break;
-				case 12://安徽
+				case 13:
                     this.hp = 'wd';
                     this.score = 10;
                     this.modelimg = "c_9.png";
@@ -169,7 +169,7 @@ var objA;
                     this.dieTime = 2;
 					this.type=2;
                     break;
-				case 13://苏州
+				case 14:
                     this.hp = 'wd';
                     this.score = 10;
                     this.modelimg = "c_10.png";
@@ -177,7 +177,7 @@ var objA;
                     this.dieTime = 2;
 					this.type=2;
                     break;
-				case 14://无锡
+				case 15:
                     this.hp = 'wd';
                     this.score = 10;
                     this.modelimg = "c_11.png";
@@ -185,7 +185,7 @@ var objA;
                     this.dieTime = 2;
 					this.type=2;
                     break;
-				case 15://广州
+				case 16:
                     this.hp = 'wd';
                     this.score = 10;
                     this.modelimg = "c_12.png";
@@ -193,7 +193,7 @@ var objA;
                     this.dieTime = 2;
 					this.type=2;
                     break;
-				case 16://重庆
+				case 17:
                     this.hp = 'wd';
                     this.score = 10;
                     this.modelimg = "c_13.png";
@@ -201,10 +201,154 @@ var objA;
                     this.dieTime = 2;
 					this.type=2;
                     break;
-				case 17://深圳
+				case 18:
                     this.hp = 'wd';
                     this.score = 10;
                     this.modelimg = "c_14.png";
+                    this.maxSpeed = 20;
+                    this.dieTime = 2;
+					this.type=2;
+                    break;
+				case 19:
+                    this.hp = 'wd';
+                    this.score = 10;
+                    this.modelimg = "c_15.png";
+                    this.maxSpeed = 20;
+                    this.dieTime = 2;
+					this.type=2;
+                    break;
+				case 20:
+                    this.hp = 'wd';
+                    this.score = 10;
+                    this.modelimg = "c_16.png";
+                    this.maxSpeed = 20;
+                    this.dieTime = 2;
+					this.type=2;
+                    break;
+				case 21:
+                    this.hp = 'wd';
+                    this.score = 10;
+                    this.modelimg = "c_17.png";
+                    this.maxSpeed = 20;
+                    this.dieTime = 2;
+					this.type=2;
+                    break;
+				case 22:
+                    this.hp = 'wd';
+                    this.score = 10;
+                    this.modelimg = "c_18.png";
+                    this.maxSpeed = 20;
+                    this.dieTime = 2;
+					this.type=2;
+                    break;
+				case 23:
+                    this.hp = 'wd';
+                    this.score = 10;
+                    this.modelimg = "c_19.png";
+                    this.maxSpeed = 20;
+                    this.dieTime = 2;
+					this.type=2;
+                    break;
+				case 24:
+                    this.hp = 'wd';
+                    this.score = 10;
+                    this.modelimg = "c_20.png";
+                    this.maxSpeed = 20;
+                    this.dieTime = 2;
+					this.type=2;
+                    break;
+				case 25:
+                    this.hp = 'wd';
+                    this.score = 10;
+                    this.modelimg = "c_21.png";
+                    this.maxSpeed = 20;
+                    this.dieTime = 2;
+					this.type=2;
+                    break;
+				case 26:
+                    this.hp = 'wd';
+                    this.score = 10;
+                    this.modelimg = "c_22.png";
+                    this.maxSpeed = 20;
+                    this.dieTime = 2;
+					this.type=2;
+                    break;
+				case 27:
+                    this.hp = 'wd';
+                    this.score = 10;
+                    this.modelimg = "c_23.png";
+                    this.maxSpeed = 20;
+                    this.dieTime = 2;
+					this.type=2;
+                    break;
+				case 28:
+                    this.hp = 'wd';
+                    this.score = 10;
+                    this.modelimg = "c_24.png";
+                    this.maxSpeed = 20;
+                    this.dieTime = 2;
+					this.type=2;
+                    break;
+				case 29:
+                    this.hp = 'wd';
+                    this.score = 10;
+                    this.modelimg = "c_25.png";
+                    this.maxSpeed = 20;
+                    this.dieTime = 2;
+					this.type=2;
+                    break;
+				case 30:
+                    this.hp = 'wd';
+                    this.score = 10;
+                    this.modelimg = "c_26.png";
+                    this.maxSpeed = 20;
+                    this.dieTime = 2;
+					this.type=2;
+                    break;
+				case 31:
+                    this.hp = 'wd';
+                    this.score = 10;
+                    this.modelimg = "c_27.png";
+                    this.maxSpeed = 20;
+                    this.dieTime = 2;
+					this.type=2;
+                    break;
+				case 32:
+                    this.hp = 'wd';
+                    this.score = 10;
+                    this.modelimg = "c_28.png";
+                    this.maxSpeed = 20;
+                    this.dieTime = 2;
+					this.type=2;
+                    break;
+				case 33:
+                    this.hp = 'wd';
+                    this.score = 10;
+                    this.modelimg = "c_29.png";
+                    this.maxSpeed = 20;
+                    this.dieTime = 2;
+					this.type=2;
+                    break;
+				case 34:
+                    this.hp = 'wd';
+                    this.score = 10;
+                    this.modelimg = "c_30.png";
+                    this.maxSpeed = 20;
+                    this.dieTime = 2;
+					this.type=2;
+                    break;
+				case 35:
+                    this.hp = 'wd';
+                    this.score = 10;
+                    this.modelimg = "c_31.png";
+                    this.maxSpeed = 20;
+                    this.dieTime = 2;
+					this.type=2;
+                    break;
+				case 36:
+                    this.hp = 'wd';
+                    this.score = 10;
+                    this.modelimg = "c_32.png";
                     this.maxSpeed = 20;
                     this.dieTime = 2;
 					this.type=2;
@@ -437,7 +581,7 @@ var objA;
 				}
 				
 				carStep++;
-				if(carStep==100){
+				if(carStep==500){
 					carStep=1;
 				}
                 
@@ -446,14 +590,21 @@ var objA;
                 //a.me.attacking();
                 a.plainsDying();
 				
-				if(clStep>=5&&clStep<9&&gamePlaying){
+				if(clStep>=8&&clStep<16&&gamePlaying){
+					clearInterval(a.clock);
+					a.clock = setInterval(function() {
+						a.refresh();
+					},
+					7)
+				}
+				if(clStep>=16&&clStep<24&&gamePlaying){
 					clearInterval(a.clock);
 					a.clock = setInterval(function() {
 						a.refresh();
 					},
 					5)
 				}
-				else if(clStep>=9&&gamePlaying){
+				else if(clStep>=24&&gamePlaying){
 					clearInterval(a.clock);
 					a.clock = setInterval(function() {
 						a.refresh();
@@ -472,7 +623,7 @@ var objA;
             a.plains = [];
             a.plainsNum = 0;
             a.addPlain = function() {
-				if(a.plainsNum>=34){
+				if(a.plainsNum>=65){
 					a.plains = [];
 					isGame1Start=false;
 					setTimeout(function(){
@@ -490,9 +641,9 @@ var objA;
 					var rnumb = Math.ceil(Math.random()*100);
 					var anumb = Math.ceil(Math.random()*100);
                     switch (true) {
-                    case a.plainsNum%2==0&&clStep<=14 : cityStep++;var tempPlane=cityStep+3;a.plains.push(new c(tempPlane, 0.3));
+                    case a.plainsNum%2==0&&clStep<=32 : cityStep++;var tempPlane=cityStep+4;a.plains.push(new c(tempPlane, 0.3));
                         break;
-					case rnumb>=75 : a.plains.push(new c(18, 0.3));
+					case rnumb>=75 : a.plains.push(new c(4, 0.3));
                         break;
                     case rnumb>=50 : a.plains.push(new c(3, 0.3));
                         break;
@@ -522,8 +673,8 @@ var objA;
 									b.status=false;
 									clStep++;
 									$('.point').text(clStep*10);
-									if(clStep>=14){
-										clStep=14;
+									if(clStep>=32){
+										clStep=32;
 										$('.point').text(clStep*10);
 										//第一关通过
 										//$('.arrivedCity').removeClass('arrivedCity1 arrivedCity2 arrivedCity3 arrivedCity4 arrivedCity5 arrivedCity6 arrivedCity7 arrivedCity8 arrivedCity9 arrivedCity10 arrivedCity11 arrivedCity12 arrivedCity13 arrivedCity14').addClass('arrivedCity'+clStep);
@@ -749,7 +900,7 @@ var objA;
     i = e.getContext("2d"),
     d = [];
     $(function() {
-        m(["road.jpg","che1.png","che2.png","che3.png","lza1.png","lza2.png","lzb1.png","lzb2.png","lzc1.png","lzc2.png","cl_1.png","cl_2.png","cl_3.png","cl_4.png","cl_5.png","cl_6.png","cl_7.png","cl_8.png","cl_9.png","cl_10.png","cl_11.png","cl_12.png","cl_13.png","cl_14.png"],indexInit)
+        m(["road.jpg","che1.png","che2.png","che3.png","lza1.png","lza2.png","lzb1.png","lzb2.png","lzc1.png","lzc2.png"],indexInit)//,"cl_1.png","cl_2.png","cl_3.png","cl_4.png","cl_5.png","cl_6.png","cl_7.png","cl_8.png","cl_9.png","cl_10.png","cl_11.png","cl_12.png","cl_13.png","cl_14.png","cl_15.png","cl_16.png","cl_17.png","cl_18.png","cl_19.png","cl_20.png","cl_21.png","cl_22.png","cl_23.png","cl_24.png","cl_25.png","cl_26.png","cl_27.png","cl_28.png","cl_29.png","cl_30.png","cl_31.png","cl_32.png"
 		//"mapTop.png",
     })
 	
